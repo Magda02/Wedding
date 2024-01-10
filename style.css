@@ -1,0 +1,101 @@
+html {
+    background-color: #061F03;
+    color: #f5e7d7;
+    
+    
+    
+}
+
+body {
+    flex-direction: column;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 30px;
+    
+}
+
+header h1 {
+   text-align: left; 
+}
+
+header nav {
+    text-align: right;
+   
+}
+
+ul {
+    list-style-type: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+.intro div{
+    margin-left: 40px;
+}
+
+.name {
+    font-size: 70px;
+    
+    margin-left: 150px;
+    
+}
+
+.intro .date {
+    text-align: left;
+    margin-left: 40px;
+    font-size: 20px;
+}
+
+.intro button {
+    margin: 20px;
+    margin-left: 250px;
+}
+
+
+
+
+.intro img {
+    width: 50%;
+    height: 50%;
+    float: right;
+}
+
+
+
+
+
+.OnTheDay {
+    margin: 30px;
+    
+}
+
+.honeymoon {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.honeymoon button {
+    width: 100px;
+    
+}
+
+.rsvp {
+    margin: 30px;
+    text-align: center;
+}
