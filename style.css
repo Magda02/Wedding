@@ -5,6 +5,9 @@ html {
 
 body {
     flex-direction: column;
+    margin: 0;
+    height: 100%;
+    
 
 }
 
@@ -12,7 +15,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin: 30px;
+    border-bottom: 1px solid #c9bbc3;
 }
 
 header h1 {
@@ -21,6 +24,7 @@ header h1 {
 
 header nav {
     text-align: right;
+
    
 }
 
@@ -31,16 +35,21 @@ ul {
 main {
     display: flex;
     flex-direction: column;
-    margin: 50px;
+    
 }
+
+/* ~~~~~~ Intro ~~~~~~ */
 
 .intro {
     display: flex;
     justify-content: space-between;
-    margin: 30px;
+    margin: auto;
+    padding: 30px;
+    align-items: center;
 }
 .intro div{
-    margin-left: 40px;
+    margin: auto;
+    align-items: center;
 }
 
 .name {
@@ -57,12 +66,9 @@ main {
 }
 
 .intro button {
-    margin: 20px;
+    margin: auto;
     margin-left: 250px;
 }
-
-
-
 
 .intro img {
     width: 50%;
@@ -71,29 +77,110 @@ main {
 }
 
 
-
-
+/* ~~~~~~ On the day ~~~~~~*/
 
 .OnTheDay {
-    margin: 30px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 30px;
+    background-color:#c9bbc3; /*this color?*/
+    color: black;
     
 }
 
-.honeymoon {
-    margin: 30px;
+.OnTheDay div {
+    margin: auto;
+    align-items: center;
+}
+
+
+.OnTheDay img{
+    width: 20%;
+    height: 20%;
+    
+}
+
+.OnTheDay ul {
+    margin: auto;
+    align-items: center;
+}
+
+/* ~~~~~~ Photos ~~~~~~*/
+.photo {
+    
     display: flex;
-    flex-direction: column;
+    padding: 20px;
+    
+}
+
+.photo img {
+    height: 30%;
+    width:30%;
+    margin-left:50px;
+}
+
+/* ~~~~~~ Quote ~~~~~~*/
+
+.quote {
+    background-color: #c9bbc3;
+    color: black;
+    padding: 50px;
+    text-align: center;
+
+}
+
+/* ~~~~~~ Honeymoon ~~~~~~*/
+
+.honeymoon {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: 30px;
+    
+}
+
+.honeymoon div{
+    padding: 10px;
+    align-items: center;
+    padding: 50px;
+}
+
+.honeymoon h1 {
+    font-size: 50px;
+}
+
+.honeymoon p {
+    font-size: 20px;
     text-align: center;
 }
 
 .honeymoon button {
-    width: 100px;
-    
+    position: absolute;
 }
+
+
+.honeymoon img {
+    
+    align-items: center;
+    height: 20%;
+    width:20%; 
+}
+
+/* ~~~~~~ RSVP ~~~~~~*/
 
 .rsvp {
-    margin: 30px;
+    background-color:#c9bbc3;
+    color: black;
+    padding: 50px;
     text-align: center;
-}
 
+    
+}
+ footer {
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+ }
 
