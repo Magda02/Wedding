@@ -1,9 +1,6 @@
 html {
     background-color: #061F03;
     color: #f5e7d7;
-    
-    
-    
 }
 
 body {
@@ -16,7 +13,6 @@ header {
     justify-content: space-between;
     align-items: baseline;
     margin: 30px;
-    
 }
 
 header h1 {
@@ -99,3 +95,5 @@ main {
     margin: 30px;
     text-align: center;
 }
+
+

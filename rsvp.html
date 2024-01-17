@@ -4,16 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
     <title>Document</title>
 </head>
 <body>
     <header>
         <h1>M & J</h1>
         <nav> 
-            <a>RSVP</a>
+            <a href="Home.html">Home</a>
         </nav>
     </header>
-    <main></main>
+    <main>
+        
+        <h1>Wedding RSVP</h1>
+
+        <form id="form">
+            <div>
+                <label>First Name: </label>
+                <br>
+                <input type="text" id="fname" name="First Name">
+            </div>
+            <br>
+            <div>
+                <label>Last Name: </label>
+                <br>
+                <input type="text" id="lname" name="Last Name">
+            </div>
+            <br>
+            <div>
+                <label>Will you be attending?: </label>
+                <br>
+                <select id="attending" name="Attending">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label>Will you be bringing a plus one?: </label>
+                <br>
+                <select id="plusOne" name="Plus One">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label>Do you have any dietary requirements: </label>
+                <br>
+                <select id="plusOne" name="Dietary Requirements">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+                <br>
+                <label>If Yes: </label>
+                <br>
+                <textarea id="message" name="If Yes"></textarea>
+            </div>
+            <br>
+            <div>
+                <label>Message: </label>
+                <br>
+                <textarea id="message" name="Message"></textarea>
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="Submit" id="submit" />
+            </div>
+        </form>
+
+    </main>
     <footer></footer>
+
+
+    <script>
+        const form = document.querySelector("#form");
+        const submitButton = document.querySelector("#submit");
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzWfNAd5NMT8Evl-1I92oeqgcz_fOSxuqD8VC09-_wVUgrhHPIez6ojHSW8-XOXRcfVQg/exec';
+     
+        form.addEventListener('submit', e => {
+            submitButton.disabled = true;
+            e.preventDefault();
+            let requestBody = new FormData(form);
+            fetch(scriptURL, { method: 'POST', body: requestBody })
+                .then(response => response.text())  // or response.json() if the response is JSON
+                .then(data => {
+                    alert('Success!', data);
+                    submitButton.disabled = false;
+                })
+                .catch(error => {
+                    alert('Error!', error.message);
+                    submitButton.disabled = false;
+                });
+        });
+    </script>
 </body>
 </html>
