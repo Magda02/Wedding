@@ -11,67 +11,75 @@
     <header>
         <h1>M & J</h1>
         <nav> 
-            <a href="index.html">Home</a>
+            <a class="btn" href="index.html">
+                <button type="button">Home</button>
+            </a>
         </nav>
     </header>
     <main>
-        
-        <h1>Wedding RSVP</h1>
 
-        <form id="form">
-            <div>
-                <label>First Name: </label>
+        <div class="rsvp-page">
+            <h1>Wedding RSVP</h1>
+        </div>
+
+        <div class="rsvp-form">
+
+            <form id="form">
+                <div>
+                    <label>First Name: </label>
+                    <br>
+                    <input type="text" id="fname" name="First Name">
+                </div>
                 <br>
-                <input type="text" id="fname" name="First Name">
-            </div>
-            <br>
-            <div>
-                <label>Last Name: </label>
+                <div>
+                    <label>Last Name: </label>
+                    <br>
+                    <input type="text" id="lname" name="Last Name">
+                </div>
                 <br>
-                <input type="text" id="lname" name="Last Name">
-            </div>
-            <br>
-            <div>
-                <label>Will you be attending?: </label>
+                <div>
+                    <label>Will you be attending?: </label>
+                    <br>
+                    <select id="attending" name="Attending">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
                 <br>
-                <select id="attending" name="Attending">
-                    <option value="yes">Yes</option>
-                    <option value="no">No</option>
-                </select>
-            </div>
-            <br>
-            <div>
-                <label>Will you be bringing a plus one?: </label>
+                <div>
+                    <label>Will you be bringing a plus one?: </label>
+                    <br>
+                    <select id="plusOne" name="Plus One">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
                 <br>
-                <select id="plusOne" name="Plus One">
-                    <option value="yes">Yes</option>
-                    <option value="no">No</option>
-                </select>
-            </div>
-            <br>
-            <div>
-                <label>Do you have any dietary requirements: </label>
+                <div>
+                    <label>Do you have any dietary requirements: </label>
+                    <br>
+                    <select id="plusOne" name="Dietary Requirements">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                    <br>
+                    <label>If Yes: </label>
+                    <br>
+                    <textarea id="message" name="If Yes"></textarea>
+                </div>
                 <br>
-                <select id="plusOne" name="Dietary Requirements">
-                    <option value="yes">Yes</option>
-                    <option value="no">No</option>
-                </select>
+                <div>
+                    <label>Message: </label>
+                    <br>
+                    <textarea id="message" name="Message"></textarea>
+                </div>
                 <br>
-                <label>If Yes: </label>
-                <br>
-                <textarea id="message" name="If Yes"></textarea>
-            </div>
-            <br>
-            <div>
-                <label>Message: </label>
-                <br>
-                <textarea id="message" name="Message"></textarea>
-            </div>
-            <br>
-            <div>
-                <input type="submit" value="Submit" id="submit" />
-            </div>
-        </form>
+                <div>
+                    <input type="submit" value="Submit" id="submit" />
+                </div>
+            </form>
+        </div>
+       
 
     </main>
     <footer></footer>
