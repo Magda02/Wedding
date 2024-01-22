@@ -99,8 +99,7 @@ header nav {
     background-color:#c9bbc3; 
     color: black;
     justify-content: flex-start;
-    display: flex;
-    margin: auto;
+    display: flex;  
     padding: 30px;
 }
 
@@ -109,8 +108,9 @@ h1 {
 }
 
 .OnTheDay img{
+    text-align: center;
     width: 25%;
-    
+    height: 30%;
     padding: 50px 150px 50px 100px;
     
 }
@@ -122,22 +122,22 @@ h1 {
 
 /* ~~~~~~ Photos ~~~~~~*/
 .photo {
-    
+    justify-content: space-around;
     display: flex;
-    padding: 20px;
+    flex-direction: row;
+    
     
 }
 
 .photo img {
-
     width:30%;
-    margin-left:50px;
+    margin: 10px 0px;
+    
 }
 
 /* ~~~~~~ Travel & Stay ~~~~~~*/
 
 .travel {
-    
     justify-content: center;
     display: flex;
     flex-direction: row;
@@ -153,22 +153,11 @@ h1 {
     width: 100%;
 
 }
-
-.travel .map {
-  
-    
-}
-
+/*
 .travel iframe{
     height: 100%;
     width: 100%; 
-    
-}
-
-.travel .stay{
-    
-}
-
+}*/
 
 /* ~~~~~~ Honeymoon ~~~~~~*/
 
@@ -178,11 +167,10 @@ h1 {
     align-items: center;
     margin: auto;
     padding: 30px;
-    
 }
 
 .honeymoon div{ 
-    align-items: center;
+    text-align: center;
     padding: 50px;
 }
 
@@ -192,7 +180,7 @@ h1 {
 
 .honeymoon p {
     font-size: 20px;
-    text-align: center;
+    
 }
 
 .honeymoon img {
