@@ -115,6 +115,12 @@ h1 {
     
 }
 
+@media only screen and (max-width: 700px) {
+    .OnTheDay img {
+        width: 100%;
+    }
+}
+
 .schedule ul{
     list-style-type: none;
 
@@ -125,8 +131,7 @@ h1 {
     justify-content: space-around;
     display: flex;
     flex-direction: row;
-    
-    
+
 }
 
 .photo img {
