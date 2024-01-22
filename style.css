@@ -59,10 +59,13 @@ header nav {
 .intro {
     display: flex;
     justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin: auto;
     padding: 30px;
-    align-items: center;
+    
 }
+
 .intro div{
     margin: auto;
     align-items: center;
@@ -90,6 +93,44 @@ header nav {
     float: right;
 }
 
+@media only screen and (width: 700px) {
+    .intro {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        padding: 30px;
+        
+    }
+
+    .intro div{
+        margin: auto;
+        align-items: center;
+    }
+    
+    .name {
+        font-size: 70px;
+        margin-left: 100px;
+        
+    }
+    
+    .intro .date {
+        text-align: left;
+        margin-left: 40px;
+        font-size: 20px;
+    }
+    
+    .intro button {
+        margin: auto;
+        margin-left: 250px;
+    }
+    
+    .intro img {
+        width: 50%;
+        float: right;
+    }
+
+    
+}
 
 /* ~~~~~~ On the day ~~~~~~*/
 
@@ -100,6 +141,8 @@ header nav {
     color: black;
     justify-content: flex-start;
     display: flex;  
+    flex-direction: row;
+    flex-wrap: wrap;
     padding: 30px;
 }
 
@@ -110,8 +153,8 @@ h1 {
 .OnTheDay img{
     text-align: center;
     width: 25%;
-    height: 30%;
-    padding: 50px 150px 50px 100px;
+    height: auto;
+    Margin: 0px 40px;
     
 }
 
@@ -119,6 +162,16 @@ h1 {
 .schedule ul{
     list-style-type: none;
 
+}
+
+@media only screen and (width: 700px){
+    .OnTheDay img{
+        text-align: center;
+        width: 25%;
+        height: auto;
+        
+        
+    }
 }
 
 /* ~~~~~~ Photos ~~~~~~*/
@@ -153,11 +206,11 @@ h1 {
     width: 100%;
 
 }
-/*
-.travel iframe{
-    height: 100%;
-    width: 100%; 
-}*/
+
+.travel iframe {
+    margin-right: 50px;
+}
+
 
 @media only screen and (max-width: 700px) {
     .travel iframe {
@@ -171,9 +224,11 @@ h1 {
 .honeymoon {
     justify-content: center;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    margin: auto;
-    padding: 30px;
+    
+    
 }
 
 .honeymoon div{ 
@@ -193,6 +248,17 @@ h1 {
 .honeymoon img {
     align-items: center;
     width:20%; 
+    margin: 10px 20px;
+}
+
+@media only screen and (width:700px) {
+    .honeymoon div{ 
+        text-align: center;
+    }
+
+    .honeymoon img {
+        width: 50%;
+    }
 }
 
 /* ~~~~~~ RSVP ~~~~~~*/
