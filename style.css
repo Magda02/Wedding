@@ -115,11 +115,6 @@ h1 {
     
 }
 
-@media screen (max-width: 700px) {
-    .OnTheDay img {
-        width: 100%;
-    }
-}
 
 .schedule ul{
     list-style-type: none;
@@ -163,6 +158,13 @@ h1 {
     height: 100%;
     width: 100%; 
 }*/
+
+@media only screen and (max-width: 700px) {
+    .travel iframe {
+        width: 100%;
+        height: auto;
+    }
+}
 
 /* ~~~~~~ Honeymoon ~~~~~~*/
 
