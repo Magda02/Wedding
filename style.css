@@ -115,7 +115,7 @@ h1 {
     
 }
 
-@media only screen and (max-width: 700px) {
+@media screen (max-width: 700px) {
     .OnTheDay img {
         width: 100%;
     }
