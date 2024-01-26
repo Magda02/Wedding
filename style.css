@@ -8,6 +8,18 @@ body {
     margin: 0;
 }
 
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+p {
+    font-size: 20px;
+}
+
 /* ~~~~~~ Button ~~~~~~ */
 
 .btn button {
@@ -36,11 +48,6 @@ body {
     border: none;
 
 }
-
-
-
-
-
 
 /* ~~~~~~ nav bar ~~~~~~*/
 
@@ -158,10 +165,6 @@ header nav {
     padding: 30px;
 }
 
-h1 {
-    font-size: 50px;
-}
-
 .OnTheDay img{
     text-align: center;
     width: 25%;
@@ -183,6 +186,7 @@ h1 {
     }
     .OnTheDay h1 {
         font-size: 30px;
+        text-align: center;
         
     }
 
@@ -228,6 +232,7 @@ h1 {
 
 .travel h1 {
     width: 100%;
+   
 
 }
 
@@ -265,15 +270,6 @@ h1 {
     margin: 50px;
 }
 
-.honeymoon h1 {
-    font-size: 50px;
-}
-
-.honeymoon p {
-    font-size: 20px;
-    
-}
-
 .honeymoon img {
     align-items: center;
     width:20%; 
@@ -290,7 +286,7 @@ h1 {
     }
 
     .honeymoon p {
-        font-size: 17px;
+        font-size: 16px;
     }
 
     .honeymoon img {
