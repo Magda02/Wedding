@@ -97,7 +97,7 @@ header nav {
 
 .name {
     font-size: 70px;
-    margin-left: 150px;
+    text-align: center;
     
 }
 
@@ -108,7 +108,8 @@ header nav {
 }
 
 .intro button {
-    margin-left: 225px;
+    margin: 0 auto;
+    display: block;
     
 }
 
@@ -124,16 +125,13 @@ header nav {
 
     .name {
         font-size: 40px;
-        margin-left: 50px;
-    }
-
-    .intro .date {
-        margin-left: 10px;
+        
     }
 
     .intro button {
-        margin-left: 100px;
-        
+        margin: 0 auto;
+        display: block;
+
     }
 
     .intro img {
@@ -179,13 +177,21 @@ h1 {
 }
 
 @media only screen and (max-width: 700px) {
+    .OnTheDay {
+        text-align: center;
+    }
     .OnTheDay h1 {
         font-size: 25px;
+        
     }
+
+    
+    
     .OnTheDay img {
         width: 50%;
         height: auto;
-        text-align: center;
+        margin: 0 auto;
+        display: block;
     }
 }
 
@@ -282,9 +288,7 @@ h1 {
     background-color:#c9bbc3;
     color: black;
     padding: 50px;
-    text-align: center;
-
-    
+    text-align: center; 
 }
 
 
