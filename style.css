@@ -311,6 +311,11 @@ h1 {
     text-align: center; 
 }
 
+@media only screen and (max-width: 700px){
+    .rsvp h1 {
+        font-size: 30px;
+    }
+}
 
 
 
