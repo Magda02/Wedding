@@ -178,14 +178,17 @@ h1 {
 
 @media only screen and (max-width: 700px) {
     .OnTheDay {
-        text-align: center;
+        justify-content: center;
+        
     }
     .OnTheDay h1 {
-        font-size: 25px;
+        font-size: 30px;
         
     }
 
-    
+    .schedule h2 {
+        font-size: 20px;
+    }
     
     .OnTheDay img {
         width: 50%;
@@ -234,9 +237,14 @@ h1 {
 
 
 @media only screen and (max-width: 700px) {
+    .travel h1{
+        font-size: 30px;
+    }
     .travel iframe {
         width: 250px;
         height: 250px;
+        margin: 0 auto;
+        display: block;
     }
 }
 
@@ -254,7 +262,7 @@ h1 {
 
 .honeymoon div{ 
     text-align: center;
-    padding: 50px;
+    margin: 50px;
 }
 
 .honeymoon h1 {
@@ -272,15 +280,27 @@ h1 {
     margin: 10px 20px;
 }
 
-@media only screen and (width:700px) {
-    .honeymoon div{ 
-        text-align: center;
+@media only screen and (max-width: 700px) {
+    .honeymoon div {
+        margin: 25px;
+    }
+    
+    .honeymoon h1{
+        font-size: 30px;
+    }
+
+    .honeymoon p {
+        font-size: 17px;
     }
 
     .honeymoon img {
+        margin: 0 auto;
+        display: block;
         width: 50%;
+        margin-bottom: 20px;
     }
 }
+
 
 /* ~~~~~~ RSVP ~~~~~~*/
 
