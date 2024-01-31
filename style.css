@@ -22,12 +22,26 @@ p, label {
 
 /* ~~~~~~ Button ~~~~~~ */
 
-.btn button, .submit {
+.btn button, .submit:link {
     background-color: #c9bbc3;
     color: black;
     padding: 10px 30px;
     border-radius: 15px;
     border: none;
+}
+
+.btn button:hover, .submit:hover {
+    padding: 13px 33px;
+    font-size: 15px;
+    border:1px solid #c9bbc3;
+    background-color: #061F03;
+    color: #c9bbc3;
+    font-weight: bold;
+}
+
+.btn button:active, .submit:active {
+    font-size: 20px;
+    border: 2px solid #c9bbc3;
 }
 
 .rsvp-btn button {
@@ -38,7 +52,19 @@ p, label {
     border: none;
 }
 
+.rsvp-btn button:hover {
+    padding: 13px 33px;
+    font-size: 15px;
+    border:1px solid #061F03;
+    background-color: #c9bbc3;
+    color: #061F03;
+    font-weight: bold;
+}
 
+.rsvp-btn button:active {
+    font-size: 20px;
+    border: 2px solid #061F03;
+}
 
 /* ~~~~~~ nav bar ~~~~~~*/
 
@@ -312,6 +338,7 @@ header nav {
     justify-content: center;
     display: flex;
     align-items: center;
+    text-align: center;
 }
 
 label {
@@ -329,6 +356,10 @@ input, select, textarea {
     border-radius: 15px;
     border: none;
     margin: 10px;
+}
+
+.input, textarea {
+    width: 200px;
 }
 
 @media only screen and (max-width: 700px) {
