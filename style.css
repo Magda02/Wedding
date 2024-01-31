@@ -16,19 +16,18 @@ h2 {
     font-size: 25px;
 }
 
-p {
+p, label {
     font-size: 20px;
 }
 
 /* ~~~~~~ Button ~~~~~~ */
 
-.btn button {
+.btn button, .submit {
     background-color: #c9bbc3;
     color: black;
     padding: 10px 30px;
     border-radius: 15px;
     border: none;
-
 }
 
 .rsvp-btn button {
@@ -37,17 +36,9 @@ p {
     padding: 10px 30px;
     border-radius: 15px;
     border: none;
-
 }
 
-.submit {
-    background-color: #c9bbc3;
-    color: black;
-    padding: 10px 30px;
-    border-radius: 15px;
-    border: none;
 
-}
 
 /* ~~~~~~ nav bar ~~~~~~*/
 
@@ -67,7 +58,6 @@ header h1 {
 header nav {
     text-align: right;
     padding-right: 100px;
-
 }
 
 @media only screen and (max-width: 700px) {
@@ -89,8 +79,7 @@ header nav {
     flex-direction: row;
     flex-wrap: wrap;
     margin: auto;
-    padding: 30px;
-    
+    padding: 30px;   
 }
 
 .intro div{
@@ -105,12 +94,10 @@ header nav {
 .name {
     font-size: 70px;
     text-align: center;
-    
 }
 
 .intro .date {
     text-align: center;
-    
     font-size: 20px;
 }
 
@@ -118,6 +105,10 @@ header nav {
     margin: 0 auto;
     display: block;
     
+}
+
+.intro a {
+    text-decoration: none;
 }
 
 .intro img {
@@ -132,23 +123,18 @@ header nav {
 
     .name {
         font-size: 40px;
-        
     }
 
     .intro button {
         margin: 0 auto;
         display: block;
-
     }
 
     .intro img {
         margin-top: 30px ;
         width: 100%;
         height: auto;
-        
     }
-
-    
 }
 
 /* ~~~~~~ On the day ~~~~~~*/
@@ -170,24 +156,21 @@ header nav {
     width: 25%;
     height: auto;
     Margin: 0px 40px;
-    
 }
 
 
 .schedule ul{
     list-style-type: none;
-
 }
 
 @media only screen and (max-width: 700px) {
     .OnTheDay {
         justify-content: center;
-        
     }
+
     .OnTheDay h1 {
         font-size: 30px;
-        text-align: center;
-        
+        text-align: center; 
     }
 
     .schedule h2 {
@@ -207,13 +190,11 @@ header nav {
     justify-content: space-around;
     display: flex;
     flex-direction: row;
-
 }
 
 .photo img {
     width:30%;
     margin: 10px 0px;
-    
 }
 
 /* ~~~~~~ Travel & Stay ~~~~~~*/
@@ -227,13 +208,10 @@ header nav {
     color: black;
     padding: 50px;
     text-align: center;
-
 }
 
 .travel h1 {
     width: 100%;
-   
-
 }
 
 .travel iframe {
@@ -245,6 +223,7 @@ header nav {
     .travel h1{
         font-size: 30px;
     }
+    
     .travel iframe {
         width: 250px;
         height: 250px;
@@ -261,8 +240,6 @@ header nav {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    
-    
 }
 
 .honeymoon div{ 
@@ -337,3 +314,29 @@ header nav {
     align-items: center;
 }
 
+label {
+    margin: 10px;
+}
+
+.sub {
+    text-align: center;
+}
+
+input, select, textarea {
+    background-color: #c9bbc3;
+    color: black;
+    padding: 10px 30px;
+    border-radius: 15px;
+    border: none;
+    margin: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+    .rsvp-page {
+        text-align: center;
+    }
+
+    .rsvp-form {
+        text-align: center;
+    }
+}
