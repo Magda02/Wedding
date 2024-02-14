@@ -9,15 +9,43 @@
 <body>
     <header>
         <h1>M & J</h1>
-        <nav> 
-            <a class="btn" href="rsvp.html">
-                <button type="button">RSVP</button>
-            </a>
+        <!--
+        <label class="hamburger-menu">
+            <input type="checkbox">
+        </label>
+        -->
+        <div class="menu" id="menu">
+            <ul>
+                <li> 
+                    <a href="#rsvp">RSVP</a>
+                </li>
+                <li>
+                    <a href="#OnTheDay">On The Day</a>
+                </li>
+                <li>
+                    <a href="#honeymoon">Honeymoon</a>
+                </li>
+            </ul>
+        </div>
+
+        <nav>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div> 
         </nav>
+
+           
+        
+            
+            
+        
+        
     </header>
     <main>
 
-        <section class="intro">
+        <section class="intro" id="intro">
             <div>
                 <h1>We're Getting Married</h1>
                 <p class="name">Magda & Jake </p> 
@@ -30,7 +58,7 @@
             <img src="photo/20231111_145725 (1).jpg" alt="Magda & Jake" />
         </section>
 
-        <section class="OnTheDay">
+        <section class="OnTheDay" id="OnTheDay">
             
             <img src="photo/wedding dress.jpg" alt="magda">
             
@@ -75,7 +103,7 @@
             <img src="photo/20230211_144955.jpg">
         </section>
 
-        <section class="travel">
+        <section class="travel" id="travel">
             <h1>Travel & Stay</h1>
 
             <div class="map">
@@ -106,7 +134,7 @@
             </div>
         </section>
 
-        <section class="honeymoon">
+        <section class="honeymoon" id="honeymoon">
             <div>
                 <h1>Honeymoon Wish</h1>
                 <p>
@@ -126,7 +154,7 @@
             <img src="photo/honeymoon.jpg">
         </section>
 
-        <section class="rsvp">
+        <section class="rsvp" id="rsvp">
             <h1>Hope to See You!</h1>
             <a class="rsvp-btn" href="rsvp.html">
                 <button type="button">RSVP</button>
@@ -136,5 +164,7 @@
     <footer>
         <p>Place holder</p>
     </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>
