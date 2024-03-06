@@ -222,7 +222,11 @@ nav {
     background-color: #061F03;
 }
 
-
+@media only screen and (max-width: 700px){
+    header h1{
+        font-size: 30px;
+    }
+}
 
 /* ~~~~~~ Intro ~~~~~~ */
 
@@ -297,6 +301,8 @@ nav {
         margin-top: 30px ;
         width: 100%;
         height: auto;
+        text-align: center;
+        align-items: center;
     }
 }
 
@@ -350,12 +356,29 @@ nav {
     .schedule h2 {
         font-size: 20px;
     }
+
+    .schedule {
+        width: 300px;
+    }
     
     .OnTheDay img {
-        width: 50%;
-        height: auto;
-        margin: 0 auto;
-        display: block;
+        width: 5%;
+        
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .OnTheDay {
+        justify-content: center;
+    }
+
+    .schedule ul{
+        padding: 0px;
+        
+    }
+
+    .OnTheDay img{
+        display: none;
     }
 }
 
@@ -370,6 +393,16 @@ nav {
     width: 19%;
     margin: 10px 0px;
     border-radius: 10px;
+}
+
+@media only screen and (max-width: 700px){
+    img.one, img.four {
+        display: none;
+    }
+
+    .photo img {
+        width: 30%;
+    }
 }
 
 /* ~~~~~~ Travel & Stay ~~~~~~*/
@@ -420,6 +453,7 @@ p.hotel {
         height: 250px;
         margin: 0 auto;
         display: block;
+        padding-bottom: 20px;
     }
 }
 
@@ -504,7 +538,6 @@ p.hotel {
     align-items: center;   
 }
 
-
 #name, #email {
     
     padding: 0px 0px 0px 10px;
@@ -515,10 +548,18 @@ p.hotel {
     height: 100px;
 }
 
- .rsvp-footer {
-    border-top: 1px solid #c9bbc3;
-    margin-top: 20px;
- }
+@media only screen and (max-width: 700px) {
+    #footerInput{
+        width: 50%;
+    }
+
+    #questions {
+        width: 60%;
+        
+    }
+}
+
+
 /* ~~~~~~~~~~~~~~~ RSVP Page ~~~~~~~~~~~~~~~ */
 
 .rsvp-page {
@@ -578,6 +619,20 @@ textarea {
     width: 200px;
 }
 
+.rsvp-footer {
+    border-top: 1px solid #c9bbc3;
+    margin: 20px 0px 0px 0px;
+    width: 100%;
+ }
+
+ .rsvp-footer p {
+    padding-top: 10px;
+    font-family: "Parisienne", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+ }
+
 @media only screen and (max-width: 700px) {
     .rsvp-page {
         text-align: center;
@@ -585,5 +640,9 @@ textarea {
 
     .rsvp-form {
         text-align: center;
+    }
+
+    .rsvp-footer p{
+        font-size: 20px;
     }
 }
