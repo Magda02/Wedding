@@ -180,19 +180,19 @@
             
         </div>
         <div class="contact">
-            <form id="form">
+            <form id="msForm">
                 <div class="name-email">
 
                     <div>
                         <label>Name: </label>
                         <br>
-                        <input class="footerInput" type="text" id="name" name="Name">
+                        <input class="footerInput" type="text" id="name" name="name">
                     </div>
                     
                     <div>
                         <label>E-Mail: </label>
                         <br>
-                        <input class="footerInput" type="text" id="email" name="E-Mail">
+                        <input class="footerInput" type="text" id="email" name="email">
                     </div>
                     
                 </div>
@@ -200,7 +200,7 @@
                 <div class="message">
                     <label>Message: </label>
                     <br>
-                    <textarea id="questions" name="Questions"></textarea>
+                    <textarea id="questions" name="questions"></textarea>
                 </div>
 
                 <div class="footer-submit">
@@ -214,7 +214,26 @@
 
     <script src="./main.js"></script>
 
-    
+    <script>
+        const form = document.querySelector("#msForm");
+    const submitButton = document.querySelector("#submit");
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz9Xsz0XbLiVTZQ4O8AxRZ_pymUg_i3AGpv83C7JuIaYPchqebOAFpnmpMdYKfyYKqbXg/exec';
+    form.addEventListener('submit', e => {
+        submitButton.disabled = true;
+        e.preventDefault();
+        let requestBody = new FormData(form);
+        fetch(scriptURL, { method: 'POST', body: requestBody })
+            .then(response => response.text())  
+            .then(data => {
+                alert('Success!', data);
+                submitButton.disabled = false;
+            })
+            .catch(error => {
+                alert('Error!', error.message);
+                submitButton.disabled = false;
+            });
+    });
+    </script>
 
 </body>
 </html>
