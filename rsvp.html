@@ -4,20 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Namdhinggo:wght@400;500;600;700;800&family=Parisienne&display=swap" rel="stylesheet">
 
     <title>Document</title>
 </head>
 <body>
     <header>
         <h1>M & J</h1>
+
         <nav> 
-            <a class="btn" href="index.html">
-                <button type="button">Home</button>
+            <a class="home" href="index.html">
+                Home
             </a>
         </nav>
     </header>
     <main>
-
         <div class="rsvp-page">
             <h1>Wedding RSVP</h1>
         </div>
@@ -53,12 +56,16 @@
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
                     </select>
+                    <br>
+                    <label>If yes, what is their full name?: </label>
+                    <br>
+                    <input class="input" type="text" id="plusName" name="Plus One Name">
                 </div>
                 <br>
                 <div>
                     <label>Do you have any dietary requirements: </label>
                     <br>
-                    <select id="plusOne" name="Dietary Requirements">
+                    <select id="diet" name="Dietary Requirements">
                         <option value="no">No</option>
                         <option value="yes">Yes</option>
                     </select>

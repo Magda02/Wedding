@@ -4,20 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Dancing+Script:wght@400..700&family=Namdhinggo:wght@400;500;600;700;800&family=Nanum+Myeongjo&family=Parisienne&family=Satisfy&display=swap" rel="stylesheet">
+    <title>M&J Wedding</title>
 </head>
 <body>
     <header>
         <h1>M & J</h1>
-        <!--
-        <label class="hamburger-menu">
-            <input type="checkbox">
-        </label>
-        -->
+        
         <div class="menu" id="menu">
             <ul>
                 <li> 
-                    <a href="#rsvp">RSVP</a>
+                    <a href="./rsvp.html">RSVP</a>
                 </li>
                 <li>
                     <a href="#OnTheDay">On The Day</a>
@@ -60,7 +59,7 @@
 
         <section class="OnTheDay" id="OnTheDay">
             
-            <img src="photo/wedding dress.jpg" alt="magda">
+            <img src="./photo/Original Banner2 flip.png" alt="magda">
             
             <div class="schedule">
 
@@ -71,13 +70,22 @@
 
                 <ul>
                     <li>
-                        <h2>12:00 - Arrive</h2>
-                        <p>place Holder</p>
+                        <h2>12:00 - Arrival Start</h2>
+                        <p>Doors will open and you can start arriving</p>
+                    </li>
+                    <li>
+                        <h2>12:45 - Please be Seated</h2>
+                        <p>Plese be seated by this time in time for the ceremony to start</p>
                     </li>
                     <li>
                         <h2>13:00 - Ceremony</h2>
-                        <p>place Holder</p>
+                        <p>Ceremony will start</p>
                     </li>
+                    <br>
+                    <li>
+                        <p class="updates">This will be further updated close to the time.</p>
+                    </li>
+                    <!--
                     <li>
                         <h2>13:30 - Cocktail Hour</h2>
                         <p>place Holder</p>
@@ -90,17 +98,20 @@
                         <h2>18:00 - Reception</h2>
                         <p>place Holder</p>
                     </li>
+                    -->
                 </ul>
             </div>
 
-            
+            <img src="./photo/Original Banner2.png" alt="magda">
             
         </section>
 
         <section class="photo">
             <img src="photo/129648596_707522679951409_1939949021988917792_n.jpg">
-            <img src="photo/DSC_0182.JPG">
+            <img src="photo/IMG-20220911-WA0056.jpg">
             <img src="photo/20230211_144955.jpg">
+            <img src="photo/116706539_978535975909165_1434733152559984177_n.jpg">
+            <img src="photo/20230302_145817.jpg">
         </section>
 
         <section class="travel" id="travel">
@@ -112,24 +123,23 @@
 
             <div class="stay">
                 <h2>Places to stay nearby</h2>
-                <p>
-                    01. Premier Inn (Hattersley)
-                    <br>
+
+                <p class="hotel">Premier Inn (Hattersley)</p>
+                <p> 
                     Stockport Rd, Mottram in Longdendale, 
                     <br>Hyde SK14 3AU
-                    <br>
-                    <br>
-                    02. Premier Inn (Denton)
-                    <br>
+                </p>
+
+                <p class="hotel">Premier Inn (Denton)</p>
+                <p>
                     Alphagate Dr, Manchester Rd S, Denton, 
                     <br>Manchester M34 3SH
-                    <br>
-                    <br>
-                    03. Travelodge
-                    <br>
+                </p>
+
+                <p class="hotel">Travelodge</p>
+                <p>
                     Lapwing Ln, Ashton-under-Lyne, Audenshaw, 
                     <br>Manchester M34 5QL
-                    
                 </p>
             </div>
         </section>
@@ -146,8 +156,8 @@
                     
                     For our honeymoon trip after tying the knot.
                 </p>
-                <a class="btn">
-                    <button>Contribute</button>
+                <a class="btn" href="https://prezola.com/wishlists/10293118" target="_blank">
+                    <button >Contribute</button>
                 </a>
             </div>
 
@@ -162,9 +172,49 @@
         </section>
     </main>
     <footer>
-        <p>Place holder</p>
+        <div>
+            <h1>Contact Us</h1>
+            <p>
+                Feel Free to Contact us with any questions!
+            </p>
+            
+        </div>
+        <div class="contact">
+            <form id="form">
+                <div class="name-email">
+
+                    <div>
+                        <label>Name: </label>
+                        <br>
+                        <input class="footerInput" type="text" id="name" name="Name">
+                    </div>
+                    
+                    <div>
+                        <label>E-Mail: </label>
+                        <br>
+                        <input class="footerInput" type="text" id="email" name="E-Mail">
+                    </div>
+                    
+                </div>
+                
+                <div class="message">
+                    <label>Message: </label>
+                    <br>
+                    <textarea id="questions" name="Questions"></textarea>
+                </div>
+
+                <div class="footer-submit">
+                    <input class="submit" type="submit" value="Submit" id="submit" />
+                </div>
+
+            </form>
+        </div>
+        
     </footer>
 
-    <script src="main.js"></script>
+    <script src="./main.js"></script>
+
+    
+
 </body>
 </html>

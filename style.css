@@ -10,14 +10,25 @@ body {
 
 h1 {
     font-size: 50px;
+    font-family:  "Parisienne", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
+
 
 h2 {
     font-size: 25px;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
 }
 
 p, label {
     font-size: 20px;
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 p {
@@ -29,36 +40,56 @@ p {
 .btn button, .submit:link {
     background-color: #c9bbc3;
     color: black;
+    font-size: 15px;
     padding: 10px 30px;
     border-radius: 15px;
     border: none;
+    width: 150px;
+    height: 50px;
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 400;
+    font-style: normal;
+    
 }
 
 .btn button:hover, .submit:hover {
     padding: 13px 33px;
-    font-size: 15px;
+    font-size: 18px;
     border:1px solid #c9bbc3;
     background-color: #061F03;
     color: #c9bbc3;
     font-weight: bold;
 }
 
+.submit {
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+}
+
 .btn button:active, .submit:active {
-    font-size: 20px;
+    font-size: 15px;
     border: 2px solid #c9bbc3;
 }
 
 .rsvp-btn button {
     background-color: #061F03;
     color: #c9bbc3;
+    font-size: 15px;
     padding: 10px 30px;
     border-radius: 15px;
     border: none;
+    width: 150px;
+    height: 50px;
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .rsvp-btn button:hover {
     padding: 13px 33px;
-    font-size: 15px;
+    font-size: 18px;
     border:1px solid #061F03;
     background-color: #c9bbc3;
     color: #061F03;
@@ -66,9 +97,25 @@ p {
 }
 
 .rsvp-btn button:active {
-    font-size: 20px;
+    font-size: 15px;
     border: 2px solid #061F03;
 }
+
+
+.sub {
+    text-align: center;
+    font-size: 15px;
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.submit {
+    background-color: #c9bbc3;
+    border-radius: 15px;
+   
+}
+
 
 /* ~~~~~~ nav bar ~~~~~~*/
 
@@ -82,6 +129,9 @@ header {
 header h1 {
    text-align: left; 
    padding-left: 50px;
+   font-family:  "Parisienne", cursive;
+   font-weight: 400;
+   font-style: normal;
 }
 
 .menu {
@@ -108,6 +158,15 @@ header h1 {
     font-size: 20px;
 }
 
+.menu a:hover{
+    font-size: 30px;
+}
+
+.menu a:active{
+    font-size: 30px;
+    color: #16700c;
+}
+
 .menu.active {
     right: 0;
 }
@@ -121,8 +180,9 @@ nav {
 .hamburger {
     height: 50px;
     width: 40px;
-    margin-left: auto;
+    
     position: relative;
+    margin-right: 30px;
 }
 
 .hamburger span {
@@ -135,6 +195,7 @@ nav {
     left: 50%;
     transform: translate(-50%, -50%);
     transition: 0.3s;
+    margin-top: 7px;
 }
 
 .hamburger span:nth-child(1) {
@@ -162,6 +223,7 @@ nav {
 }
 
 
+
 /* ~~~~~~ Intro ~~~~~~ */
 
 .intro {
@@ -176,15 +238,24 @@ nav {
 .intro div{
     margin: auto;
     align-items: center;
+    font-family: "Namdhinggo", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .intro h1 {
     text-align: center;
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .name {
     font-size: 70px;
     text-align: center;
+    font-family:  "Parisienne", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .intro .date {
@@ -205,6 +276,7 @@ nav {
 .intro img {
     width: 50%;
     float: right;
+    border-radius: 20px;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -235,16 +307,22 @@ nav {
 .OnTheDay {
     background-color:#c9bbc3; 
     color: black;
-    justify-content: flex-start;
+    justify-content: center;
     display: flex;  
     flex-direction: row;
     flex-wrap: wrap;
     padding: 30px;
 }
 
+.schedule{
+    padding: 30px;
+    text-align: center;
+    
+}
+
 .OnTheDay img{
     text-align: center;
-    width: 25%;
+    width: 5%;
     height: auto;
     Margin: 0px 40px;
 }
@@ -252,6 +330,11 @@ nav {
 
 .schedule ul{
     list-style-type: none;
+}
+
+.updates {
+    font-style: italic;
+    text-decoration: underline 1px;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -284,8 +367,9 @@ nav {
 }
 
 .photo img {
-    width:30%;
+    width: 19%;
     margin: 10px 0px;
+    border-radius: 10px;
 }
 
 /* ~~~~~~ Travel & Stay ~~~~~~*/
@@ -297,7 +381,7 @@ nav {
     flex-wrap: wrap;
     background-color: #c9bbc3;
     color: black;
-    padding: 50px;
+    padding: 50px 50px 100px 50px;
     text-align: center;
 }
 
@@ -305,10 +389,26 @@ nav {
     width: 100%;
 }
 
-.travel iframe {
-    margin-right: 50px;
+.travel h2 {
+    font-size: 30px;
+    align-items: center;
+    margin: 0px 0px 25px 0px;
 }
 
+.travel p {
+    margin: 0px 0px 25px 0px;
+}
+
+p.hotel {
+    text-decoration: underline 1px;
+    margin: 20px 0px 0px 0px;
+}
+
+.travel iframe {
+    height: 100%;
+    margin-right: 50px;
+    border-radius: 20px;
+}
 
 @media only screen and (max-width: 700px) {
     .travel h1{
@@ -331,6 +431,7 @@ nav {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    padding: 25px 0px;
 }
 
 .honeymoon div{ 
@@ -342,6 +443,7 @@ nav {
     align-items: center;
     width:20%; 
     margin: 10px 20px;
+    border-radius: 20px;
 }
 
 @media only screen and (max-width: 700px) {
@@ -381,15 +483,37 @@ nav {
     }
 }
 
-
-
 /* ~~~~~~ Footer ~~~~~~ */
 
  footer {
-    margin: auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 30px;
     padding: 10px;
     text-align: center;
  }
+
+.name-email {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;   
+}
+
+
+#name, #email {
+    
+    padding: 0px 0px 0px 10px;
+}
+
+#questions {
+    width: 320px;
+    height: 100px;
+}
 
  .rsvp-footer {
     border-top: 1px solid #c9bbc3;
@@ -403,6 +527,27 @@ nav {
     align-items: center;
 }
 
+.home {
+    text-decoration: none;
+    color: #c9bbc3;
+    font-size: 30px;
+    margin-right: 60px;
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.home:hover {
+    color: #c9bbc3;
+    font-size: 33px;
+    font-weight: bold;
+}
+
+.home:active {
+    color: #c59eb4;
+    font-size: 33px;
+}
+
 .rsvp-form {
     justify-content: center;
     display: flex;
@@ -414,22 +559,19 @@ label {
     margin: 10px;
 }
 
-.sub {
-    text-align: center;
-}
-
-.submit {
-    background-color: #c9bbc3;
-    border-radius: 15px;
-}
-
 input, select, textarea {
     background-color: #f0f0f0;
     color: black;
-    padding: 10px 30px;
+    padding: 0px 10px;
     border-radius: 5px;
     border: none;
     margin: 10px;
+    width: 150px;
+    height: 50px;
+}
+
+textarea {
+    padding: 10px 10px;
 }
 
 .input, textarea {
