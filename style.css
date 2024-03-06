@@ -530,6 +530,10 @@ p.hotel {
     text-align: center;
  }
 
+ .ms-questions {
+    padding: 20px 200px;
+ }
+
 .name-email {
     justify-content: center;
     display: flex;
@@ -546,9 +550,18 @@ p.hotel {
 #questions {
     width: 320px;
     height: 100px;
+    padding: 20px;
 }
 
 @media only screen and (max-width: 700px) {
+    footer h1{
+        font-size: 40px;
+    }
+
+    .ms-questions {
+        padding: 0px 0px;
+     }
+
     #footerInput{
         width: 50%;
     }
