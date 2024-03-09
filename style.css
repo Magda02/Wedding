@@ -575,6 +575,31 @@ p.hotel {
     }
 }
 
+@media only screen and (max-width: 400px) {
+    .name-email {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center; 
+        text-align: center;  
+    }
+
+    .name-email input {
+        width: 230px;
+    }
+     
+    #questions {
+        width: 200px;
+        
+    }
+
+    #footerInput{
+        width: 30%;
+    }
+
+}
+
 
 /* ~~~~~~~~~~~~~~~ RSVP Page ~~~~~~~~~~~~~~~ */
 
