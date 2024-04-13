@@ -19,8 +19,7 @@ h1 {
 h2 {
     font-size: 25px;
     font-family: "Dancing Script", cursive;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
+    font-optical-sizing: auto;   
     font-style: normal;
 }
 
@@ -124,6 +123,8 @@ header {
     justify-content: space-between;
     align-items: baseline;
     border-bottom: 1px solid #c9bbc3;
+    
+    
 }
 
 header h1 {
@@ -132,6 +133,7 @@ header h1 {
    font-family:  "Parisienne", cursive;
    font-weight: 400;
    font-style: normal;
+   
 }
 
 .menu {
@@ -180,7 +182,6 @@ nav {
 .hamburger {
     height: 50px;
     width: 40px;
-    
     position: relative;
     margin-right: 30px;
 }
@@ -275,6 +276,14 @@ nav {
 
 .intro a {
     text-decoration: none;
+}
+
+.intro .rsvp-date {
+    text-align: center;
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
 }
 
 .intro img {
@@ -544,8 +553,6 @@ p.hotel {
     text-align: left;  
 }
 
-
-
 #name, #email {
     padding: 0px 0px 0px 10px;
 }
@@ -600,7 +607,6 @@ p.hotel {
 
 }
 
-
 /* ~~~~~~~~~~~~~~~ RSVP Page ~~~~~~~~~~~~~~~ */
 
 .rsvp-page {
@@ -652,8 +658,13 @@ input, select, textarea {
     height: 50px;
 }
 
+select {
+    width: 75px;
+}
+
 textarea {
     padding: 10px 10px;
+    
 }
 
 .input, textarea {
@@ -687,3 +698,7 @@ textarea {
         font-size: 20px;
     }
 }
+
+/* ~~~~~~~~~~~~~~~ Back To Top ~~~~~~~~~~~~~~~ */
+
+
