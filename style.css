@@ -619,7 +619,8 @@ p.hotel {
     text-decoration: none;
     color: #c9bbc3;
     font-size: 30px;
-    margin-right: 60px;
+    padding-right: 50px;
+    
     font-family: "Nanum Myeongjo", serif;
     font-weight: 400;
     font-style: normal;
@@ -628,7 +629,7 @@ p.hotel {
 .home:hover {
     color: #c9bbc3;
     font-size: 33px;
-    font-weight: bold;
+    font-weight: 525;
 }
 
 .home:active {
@@ -674,7 +675,7 @@ textarea {
 .rsvp-footer {
     border-top: 1px solid #c9bbc3;
     margin: 20px 0px 0px 0px;
-    width: 100%;
+    
  }
 
  .rsvp-footer p {
