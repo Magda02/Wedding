@@ -582,7 +582,7 @@ p.hotel {
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
     .name-email {
         justify-content: center;
         display: flex;
@@ -619,7 +619,7 @@ p.hotel {
     text-decoration: none;
     color: #c9bbc3;
     font-size: 30px;
-    padding-right: 50px;
+    margin-right: 40px;
     
     font-family: "Nanum Myeongjo", serif;
     font-weight: 400;
